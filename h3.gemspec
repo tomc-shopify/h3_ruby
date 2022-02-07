@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.licenses = ["MIT"]
   spec.summary  = "C Bindings for Uber's H3 library"
   spec.homepage = "https://github.com/StuartApp/h3_ruby"
-  spec.authors  = ["Lachlan Laycock", "Sean Handley"]
-  spec.email    = "l.laycock@stuart.com"
+  spec.authors  = ["Lachlan Laycock", "Sean Handley", "Xavier Noria"]
+  spec.email    = "s.handley@stuart.com"
 
   spec.required_ruby_version = ">= 2.5"
   spec.files = `git ls-files --recurse-submodules`.split("\n")
@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.8"
   spec.add_development_dependency "yard", "~> 0.9"
+  spec.add_development_dependency "pry", "~> 0.14"
 
   spec.extensions << "ext/h3/extconf.rb"
 end
